@@ -1,0 +1,14 @@
+﻿@model RecordStore.Models.Artist
+@{
+    ViewBag.Title = "ArtistDetails";
+}
+
+<h2>
+    @Html.TextBox("ArtistName", Model.Name)
+</h2>
+
+<div>
+    <a href="@Request.UrlReferrer" class="btn btn-default btn-lg" title="Back to @ViewBag.oldTitle">
+        <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+    </a>
+</div>

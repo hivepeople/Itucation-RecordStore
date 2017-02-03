@@ -1,0 +1,28 @@
+﻿@model RecordStore.Models.User
+
+@{ 
+    ViewBag.Title = "Edit user";
+}
+
+@using (Html.BeginForm())
+{
+    // FirstName
+    @Html.LabelFor(u => u.FirstName)
+    @Html.TextBoxFor(u => u.FirstName)
+
+    // LastName
+    @Html.LabelFor(u => u.LastName)
+    @Html.EditorFor(u => u.LastName)
+
+    // USerName
+    @Html.LabelFor(hej => hej.Username)
+    @Html.TextBoxFor(u => u.Username)
+    
+    // password
+    @Html.LabelFor(u => u.Password)
+    @Html.PasswordFor(u => u.Password)
+
+    // email
+    @Html.LabelFor(u => u.Email)
+    @Html.TextBoxFor(u => u.Email)
+}
